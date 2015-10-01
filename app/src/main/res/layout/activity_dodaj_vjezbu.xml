@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="tvz.gymplanner.exerciseManage.DodajVjezbuActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linLayNaslov">
+
+        <TextView android:text="Ime vježbe" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imeVjezbeLbl"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dodajVjezbu_naziv"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLayOpis"
+        android:layout_below="@id/linLayNaslov">
+
+        <TextView android:text="Opis" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/opisVjezbeLbl"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/dodajVjezbu_opis"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj"
+        android:id="@+id/dodajVjezbuBttn_dodajVjezbu"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="dodajVjezbuMethod"/>
+
+</RelativeLayout>

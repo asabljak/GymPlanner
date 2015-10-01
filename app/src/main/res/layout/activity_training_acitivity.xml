@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="tvz.gymplanner.training.TrainingAcitivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/naziv_treninga"
+        android:hint="ime treninga"
+        android:textSize="25sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical|center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tekst_serija"
+        android:layout_marginTop="10dp"
+        android:text="Serija"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical|center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trenutna_serija"
+        android:layout_marginTop="10dp"
+        android:hint="koja je serija"
+        android:textSize="40sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical|center"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lista_vjezbi_i_ponavljanja">
+
+
+
+    </ListView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/butt_nova_serija"
+        android:text="GOTOV"
+        android:textSize="20sp"
+        android:onClick="novaSerija"/>
+
+
+
+
+
+
+
+</LinearLayout>

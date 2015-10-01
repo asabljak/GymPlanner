@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tvz.gymplanner" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-feature
+        android:name="@string/step_detector"
+        android:required="false" />
+    <uses-feature
+        android:name="@string/step_counter"
+        android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".mainPkg.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".training.NapraviTreningActivity"
+            android:label="@string/title_activity_napravi_trening"
+            android:parentActivityName=".mainPkg.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mainPkg.MainActivity" />
+        </activity>
+        <activity
+            android:name=".training.OdaberiVjezbeActivity"
+            android:label="@string/title_activity_odaberi_vjezbe"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".training.DescriptionActivity"
+            android:label="@string/title_activity_description" >
+        </activity>
+        <activity
+            android:name=".exerciseManage.UrediVjezbeActivity"
+            android:label="@string/title_activity_uredi_vjezbe" >
+        </activity>
+        <activity
+            android:name=".exerciseManage.DodajVjezbuActivity"
+            android:label="@string/title_activity_dodaj_vjezbu" >
+        </activity>
+        <activity
+            android:name=".exerciseManage.UpdateVjezbaActivity"
+            android:label="@string/title_activity_update_vjezba" >
+        </activity>
+        <activity
+            android:name=".pedometer.PedometarActivity"
+            android:label="@string/title_activity_pedometar" >
+        </activity>
+        <activity
+            android:name=".training.OdairTreningaActivity"
+            android:label="@string/title_activity_odair_treninga" >
+        </activity>
+        <activity
+            android:name=".training.OdabirTreningaActivity"
+            android:label="@string/title_activity_odabir_treninga" >
+        </activity>
+        <activity
+            android:name=".training.TrainingDetailsActivity"
+            android:label="@string/title_activity_training_details" >
+        </activity>
+        <activity
+            android:name=".training.SetTrainingNameDescriptionActivity"
+            android:label="@string/title_activity_set_training_name_description" >
+        </activity>
+        <activity
+            android:name=".training.TrainingAcitivity"
+            android:label="@string/title_activity_training_acitivity"
+            android:parentActivityName=".training.OdabirTreningaActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tvz.gymplanner.training.OdabirTreningaActivity" />
+        </activity>
+        <activity
+            android:name=".training.TrainingOverActivity"
+            android:label="@string/title_activity_training_over"
+            android:parentActivityName=".training.OdabirTreningaActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tvz.gymplanner.training.OdabirTreningaActivity" />
+        </activity>
+    </application>
+
+</manifest>

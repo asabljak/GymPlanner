@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/training_main"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:onClick="klik">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:id="@+id/training_list_item_text"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberPickerSerije"
+            android:gravity="center"
+            android:padding="10dp"
+            />
+        <!--      <EditText
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/editTextSerije"
+                  android:gravity="center"
+                  android:width="40dp"
+                  android:padding="10dp"
+                  android:inputType="number"/>-->
+
+              <GridView
+                  android:layout_width="match_parent"
+                  android:layout_height="150dp"
+                  android:id="@+id/gridView"
+                  android:numColumns="auto_fit"
+                  android:horizontalSpacing="1dp"
+                  android:verticalSpacing="1dp"
+                  android:stretchMode="columnWidth"
+                  android:gravity="center"
+                  />
+
+          </LinearLayout>
+
+
+
+
+      </LinearLayout>

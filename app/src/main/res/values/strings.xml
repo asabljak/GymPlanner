@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GymPlanner</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_napravi_trening">NapraviTreningActivity</string>
+    <string name="title_activity_odaberi_vjezbe">OdaberiVjezbeActivity</string>
+    <string name="title_activity_description">DescriptionActivity</string>
+    <string name="title_activity_uredi_vjezbe">UrediVjezbeActivity</string>
+    <string name="title_activity_dodaj_vjezbu">DodajVjezbuActivity</string>
+    <string name="title_activity_update_vjezba">UpdateVjezbaActivity</string>
+    <string name="title_activity_pedometar">PedometarActivity</string>
+     <string name="step_counter">
+         android.hardware.sensor.stepcounter
+   </string>
+
+    <string name="step_detector">
+         android.hardware.sensor.stepdetector
+   </string>
+    <string name="title_activity_odair_treninga">OdairTreningaActivity</string>
+    <string name="title_activity_odabir_treninga">OdabirTreningaActivity</string>
+    <string name="title_activity_training_details">TrainingDetailsActivity</string>
+    <string name="title_activity_set_training_name_description">setTrainingNameDescriptionActivity
+    </string>
+    <string name="title_activity_training_acitivity">TrainingAcitivity</string>
+    <string name="title_activity_training_over">TrainingOverActivity</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slika_vjezbe"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/naziv_vjezbe"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+
+        android:layout_toRightOf="@+id/slika_vjezbe"
+        android:layout_toEndOf="@+id/slika_vjezbe"
+
+        android:layout_centerVertical="true"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listItemIcon"
+        android:src="@android:drawable/ic_dialog_info"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/checkbox_vjezbe"
+        android:layout_toStartOf="@+id/checkbox_vjezbe" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/checkbox_vjezbe"
+        android:gravity="right"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="@android:color/black"
+        android:shadowColor="@android:color/black"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    />
+
+</RelativeLayout>
